@@ -244,6 +244,7 @@
                                         maxlength="12"
                                         required
                                         style="background: #ddd;"
+                                        readonly
                                         >
                                         <div class="invalid-feedback">아이디를 입력해주세요.</div>
                                     </div>
@@ -254,7 +255,7 @@
                                       type="text"
                                       class="form-control"
                                       id="email"
-                                      placeholder="mjh@naver.com"
+                                      placeholder="user1@google.com"
                                       maxlength="12"
                                       required
                                     />
@@ -324,7 +325,9 @@
                                 </div>
                                 <div class="box1">
                                     <form action="" role="form"></form>
-                                         <button class="btn btn-dark" style="background-color: grey; width: 70px; height: 40px; font-size: 1.5rem; margin-top: 6px; display:flow-root;">변경</button>
+                                         <button class="btn btn-dark" style="background-color: grey; 
+                                         width: 70px; height: 40px; font-size: 1.5rem; 
+                                         margin-top: 6px; display:flow-root;" type="button" onclick="location.href='profile.html'" >변경</button>
                                 </div>
                             </form>
                             </div>
@@ -363,7 +366,10 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn socondary"data-bs-dismiss="modal" style="font-size:20px; width: 80px; height:40px; background-color: grey; padding-left: 7px; padding-top: 5px; color:white">CANCEL</button>
-                                    <button type="button" id="pwchg" class="btn btn success" data-bs-dismiss="modal" style="font-size:20px; width: 80px; height:40px; background-color: grey; padding-left: 30px; padding-top: 5px; color:white">OK</button>
+                                    <button type="button" id="pwchg" class="btn btn success" data-bs-dismiss="modal" 
+                                    style="font-size:20px; width: 80px; height:40px; background-color: grey; 
+                                    padding-left: 30px; padding-top: 5px; color:white"
+                                    onclick="alert('비밀번호 변경 완료')">OK</button>
                                     </div>
                                 </div>
                             </div>  
@@ -388,7 +394,8 @@
                             </div>
                             <div class="modal-footer" style="display: flex; justify-content:space-between;">
                                 <button type="button" class="btn btn socondary"data-bs-dismiss="modal" style="font-size:20px; width: 80px; height:40px; background-color: grey; padding-left: 7px; padding-top: 5px; color:white">CANCEL</button>
-                                <button type="button" id="accdel" class="btn btn success" data-bs-dismiss="modal" style="font-size:20px; width: 80px; height:40px; background-color: grey; padding-left: 30px; padding-top: 5px; color:white" onclick="location.href='login.html'">OK</button>
+                                <button type="button" id="accdel" class="btn btn success" data-bs-dismiss="modal" style="font-size:20px; width: 80px; height:40px; background-color: grey; padding-left: 30px; padding-top: 5px; color:white" 
+                                onclick="location.href='login.html'">OK</button>
                             </div>
                         </div>
                     </div>  
